@@ -1,0 +1,153 @@
+body > img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+img{
+  margin-left: 1px;
+  margin-right: 1px;
+}
+p{
+  margin-top: 15px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #F0C4AC;
+}
+
+h2{
+  text-align: center;
+  background-color: violet;
+  animation-name: fadeIn;
+  animation-duration: 4s;
+  transition: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate-reverse;
+  animation: fadeIn 4s 3s infinite alternate;
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+    transform: scale(1);
+    background-color: violet ;
+  }
+  20% {
+    transform: translateY(-5px);
+    transform: scale(.80);
+    background-color: #ff94a4 ;
+  }
+  40% {
+    background-color: yellow;
+    transform: scale(.60);
+  }
+  60% {
+    background-color: violet ;
+    transform: scale(.70);
+  }
+  80% {
+    transform: translateY(0);
+    background-color: #ff94a4 ;
+    transform: scale(.90);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    background-color: yellow;
+  }
+}
+
+p{
+  text-align: center;
+}
+
+h1{
+  color: #f2a807;
+  background-color: #FED801;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-family:'Brush Script MT', cursive; 
+}
+
+h1:hover{
+  color: #FED801;
+  background-color:#f2a807;
+}
+
+* {
+  margin: 0;
+}
+
+ul{
+  list-style-type: none;
+  padding-left:0;
+}
+
+body > ul {
+  display:flex;
+  justify-content: space-between;
+}
+
+body > ul > li {
+  width: 33%;
+  font-size: 20px;
+  text-align: center;
+  background-color: #f2a807;
+  padding: 10px 0;
+}
+
+body > ul > li:hover {
+  background-color: #ca8c07;
+}
+
+ul li:nth-of-type(2){
+  position:relative;
+}
+
+.submenu {
+  position: absolute;
+  top: -9999px;
+}
+
+ul li:nth-of-type(2):hover .submenu{
+  top:44px;
+}
+
+.submenu {
+  background-color: #FED801;
+  width: 100%;
+}
+
+.submenu li {
+  padding: 5px 0;
+  border-top:1px solid #F0C4AC;
+  border-bottom:1px solid #F0C4AC;
+}
+
+.submenu li:hover {
+  background-color: #d4b502;
+  cursor: pointer;
+}
+
+.column {
+  float: left;
+  width: 24%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
